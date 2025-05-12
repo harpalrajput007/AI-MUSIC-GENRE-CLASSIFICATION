@@ -94,7 +94,7 @@ Pull requests are welcome! For major changes, please open an issue first to disc
 ## 📬 Contact
 
 **Author**: Harpal Rajput  
-📧 [YourEmail@example.com]  
+📧 [harpalsinghrajput007@gmail.com]  
 🔗 [Portfolio](https://github.com/harpalrajput007)
 
 ---
