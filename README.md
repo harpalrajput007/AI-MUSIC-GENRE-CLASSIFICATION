@@ -1,102 +1,118 @@
+🎶 AI Music Genre Classification 🎧
+🎤 Predict the genre of any song using Machine Learning & Deep Learning!
 
-# 🎶 AI Music Genre Classification 🎧  
-> 🎤 Predict the genre of any song using Machine Learning & Deep Learning!
 
-![Python](https://img.shields.io/badge/Python-3.9-blue) ![License](https://img.shields.io/badge/License-MIT-green) ![Status](https://img.shields.io/badge/Status-In%20Progress-orange)
+📌 Description
+Ever wondered what genre a song belongs to?
+This project leverages powerful audio signal processing and AI models to classify music into genres such as Rock, Jazz, Hip-Hop, Classical, and more! 🎵
 
----
+Simply upload a .wav or .mp3 file and let the model work its magic 🪄 using features like MFCC, Chroma, Tempo, and Spectrograms.
 
-## 📌 Description
+🧠 Tech Stack
+🔍 Machine Learning & Audio Processing
+🐍 Python
 
-Ever wondered what genre a song belongs to? This project uses audio signal processing and machine learning to classify songs into genres like **Rock**, **Jazz**, **Hip-Hop**, **Classical**, and more! 🎵
+🎧 Librosa – Audio feature extraction (MFCC, Chroma, Tempo)
 
-Upload a `.wav` or `.mp3` file and let the model do the magic 🪄 with audio features like **MFCC**, **Chroma**, **Tempo**, and more!
+🤖 scikit-learn – Traditional ML models
 
----
+🧠 TensorFlow / PyTorch – Deep learning with CNN (on spectrograms)
 
-## 🧠 Tech Stack
+🌐 Web Development
+⚛ React.js – Interactive frontend interface
 
-### 🔍 Machine Learning & Audio Processing
-- `Python`
-- `librosa` 🎧 – Audio feature extraction
-- `scikit-learn` 🤖 – Classical ML models
-- `TensorFlow / PyTorch` 🧠 – Deep learning (CNN on spectrograms)
+🚀 Node.js + Express – Backend API for handling requests
 
-### 🌐 Web Development
-- `React.js` ⚛ – Frontend
-- `Node.js + Express` 🚀 – Backend API
-- `MongoDB` 🗄 (optional) – Store upload history/predictions
-- `WaveSurfer.js` 🌊 – Audio waveform visualization
+🗄 MongoDB (Optional) – Store upload history or predictions
 
-### 🧰 Dev Tools
-- `VS Code`
-- `Git + GitHub`
-- `Render/Heroku` for deployment (planned)
+🌊 WaveSurfer.js – Real-time audio waveform visualization
 
----
+🧰 Developer Tools
+💻 VS Code
 
-## 📁 Dataset
+🔀 Git + GitHub
 
-We are using the popular **GTZAN Genre Dataset** for training and testing.
+☁️ Render / Heroku – Planned deployment platform
 
-🔗 [GTZAN Dataset on Kaggle](https://www.kaggle.com/datasets/andradaolteanu/gtzan-dataset-music-genre-classification)
+📁 Dataset
+We use the popular GTZAN Genre Dataset for training and evaluation.
 
-- 1000 audio tracks 🎵
-- 30 seconds per track ⏱
-- 10 genres: `blues`, `classical`, `country`, `disco`, `hiphop`, `jazz`, `metal`, `pop`, `reggae`, `rock`
+🔗 GTZAN Dataset on Kaggle
 
----
+🎵 1000 audio tracks
 
-## 🔄 Workflow
+⏱ 30 seconds per track
 
-1. 🎼 **Upload** audio file
-2. 📊 **Preprocess & extract features** (MFCC, Chroma, Tempo, etc.)
-3. 🧠 **Predict genre** using ML/DL model
-4. 🎨 **Display** result with audio visualization + confidence score
+🎼 10 genres:
 
----
+blues, classical, country, disco, hiphop, jazz, metal, pop, reggae, rock
 
-## ✨ Features
+🔄 Workflow
+🎼 Upload an audio file
 
-- 🎵 Upload any `.mp3` or `.wav` file
-- 🧠 Predict genre using AI
-- 📈 Confidence score visualization
-- 🌊 Waveform audio playback
-- 📚 Genre info cards with examples
+🔬 Preprocess and extract features (MFCC, Chroma, Tempo, etc.)
 
----
+🧠 Predict the genre using ML/DL models
 
-## 📸 Screenshots *(Coming soon...)*
+🎨 Display the prediction result with:
 
----
+Confidence score bar
 
-## 🛡 License
+Audio waveform
 
-This project is licensed under the MIT License – see the [LICENSE](./LICENSE) file for details.
+Genre information
 
----
+✨ Features
+🎵 Upload .mp3 or .wav music files
 
-## 💡 Future Scope
+🔮 Predict genre using AI (ML or CNN-based models)
 
-- 🎙 Real-time genre detection from mic input  
-- 🔗 Combine lyrics + audio for hybrid classification  
-- 🌍 Deploy live with public demo  
-- 🧑‍🏫 Educational mode: explain features behind prediction
+📈 Confidence score visualized with gradient bar
 
----
+🌊 Waveform-based audio player using Web Audio API
 
-## 🤝 Contributing
+📚 Genre cards with description and examples
 
-Pull requests are welcome! For major changes, please open an issue first to discuss what you'd like to change.
+📸 Screenshots coming soon!
 
----
+🖼 UI Preview (Coming Soon…)
+Screenshots or demo GIFs of:
 
-## 📬 Contact
+Upload screen
 
-**Author**: Harpal Rajput  
-📧 [harpalsinghrajput007@gmail.com]  
-🔗 [Portfolio](https://github.com/harpalrajput007)
+Prediction results
 
----
+Spectrogram visualization
 
-⭐️ If you like this project, give it a star on GitHub!
+Audio playback + confidence meter
+
+🛡 License
+This project is licensed under the MIT License.
+See the LICENSE file for more details.
+
+💡 Future Scope
+🎙 Real-time genre detection from microphone input
+
+🧠 Combine audio + lyrics for better classification
+
+🌐 Deploy live as a public web app
+
+🧑‍🏫 Add educational mode: explain features influencing prediction
+
+🤝 Contributing
+Contributions are welcome!
+If you’d like to suggest a feature or fix a bug, please:
+
+Open an issue first to discuss your idea.
+
+Fork the repository.
+
+Create a new branch and submit a pull request.
+
+📬 Contact
+Author: Harpal Rajput
+📧 Email: harpalsinghrajput007@gmail.com
+🔗 Portfolio: harpalrajput007 GitHub
+
+⭐️ Support
+If you like this project, don’t forget to star ⭐ it on GitHub!
