@@ -1,118 +1,117 @@
-🎶 AI Music Genre Classification 🎧
-🎤 Predict the genre of any song using Machine Learning & Deep Learning!
+# 🎶 AI Music Genre Classifier 🎧
 
+An AI-powered web application that predicts the genre of an uploaded music file using machine learning and audio signal processing.
 
-📌 Description
-Ever wondered what genre a song belongs to?
-This project leverages powerful audio signal processing and AI models to classify music into genres such as Rock, Jazz, Hip-Hop, Classical, and more! 🎵
+![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
+![Flask](https://img.shields.io/badge/Flask-Web%20Framework-lightgrey)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
 
-Simply upload a .wav or .mp3 file and let the model work its magic 🪄 using features like MFCC, Chroma, Tempo, and Spectrograms.
+---
 
-🧠 Tech Stack
-🔍 Machine Learning & Audio Processing
-🐍 Python
+## 📁 Project Structure
 
-🎧 Librosa – Audio feature extraction (MFCC, Chroma, Tempo)
+```
+.
+├── app.py                  # Main Flask application
+├── utils.py                # Feature extraction logic using Librosa
+├── model.pkl               # Trained ML model (e.g., Random Forest)
+├── templates/
+│   ├── index.html          # Upload form UI
+│   └── result.html         # Result display with visualization
+├── static/
+│   ├── uploads/            # Uploaded audio files
+│   └── plots/              # Spectrograms of uploaded audio
+├── requirements.txt        # Python dependencies
+└── README.md
+```
 
-🤖 scikit-learn – Traditional ML models
+---
 
-🧠 TensorFlow / PyTorch – Deep learning with CNN (on spectrograms)
+## 🧠 Technologies Used
 
-🌐 Web Development
-⚛ React.js – Interactive frontend interface
+### 🎯 Core Libraries
 
-🚀 Node.js + Express – Backend API for handling requests
+- `Flask` – Lightweight Python web framework
+- `Librosa` – Audio processing and feature extraction
+- `Scikit-learn` – Model training and prediction
+- `Matplotlib` – Spectrogram plotting
 
-🗄 MongoDB (Optional) – Store upload history or predictions
+### 🖼 Frontend
 
-🌊 WaveSurfer.js – Real-time audio waveform visualization
+- HTML5 + CSS3 (Glassmorphism UI)
+- JavaScript (audio visualizer using Canvas API)
+- Jinja2 templating (for dynamic HTML)
 
-🧰 Developer Tools
-💻 VS Code
+---
 
-🔀 Git + GitHub
+## 🎵 Features Extracted
 
-☁️ Render / Heroku – Planned deployment platform
+- MFCCs (Mel-frequency cepstral coefficients): mean & std
+- Chroma frequencies: mean & std
+- Spectral contrast: mean
 
-📁 Dataset
-We use the popular GTZAN Genre Dataset for training and evaluation.
+---
 
-🔗 GTZAN Dataset on Kaggle
+## 🔍 ML Model
 
-🎵 1000 audio tracks
+- Model: Trained using scikit-learn (e.g., Random Forest or similar)
+- Input: 108-dimensional feature vector from audio
+- Output: Predicted genre + Confidence %
+- Classes: `['blues', 'classical', 'country', 'disco', 'hiphop', 'jazz', 'metal', 'pop', 'reggae', 'rock']`
 
-⏱ 30 seconds per track
+---
 
-🎼 10 genres:
+## 🌐 Web Interface Flow
 
-blues, classical, country, disco, hiphop, jazz, metal, pop, reggae, rock
+1. User uploads an audio file
+2. Backend extracts features with `utils.py`
+3. Model predicts genre and confidence
+4. Spectrogram is generated
+5. Audio player, genre description, confidence bar & visualization shown in result
 
-🔄 Workflow
-🎼 Upload an audio file
+---
 
-🔬 Preprocess and extract features (MFCC, Chroma, Tempo, etc.)
+## 📊 Visualization
 
-🧠 Predict the genre using ML/DL models
+- Spectrogram: created using `matplotlib` & `librosa.display`
+- Audio Visualizer: Canvas bars synced to audio playback
 
-🎨 Display the prediction result with:
+---
 
-Confidence score bar
+## 📥 Supported Audio Formats
 
-Audio waveform
+- `.mp3`, `.wav`, `.ogg`, `.flac`
 
-Genre information
+---
 
-✨ Features
-🎵 Upload .mp3 or .wav music files
+## ⚙️ Setup Instructions
 
-🔮 Predict genre using AI (ML or CNN-based models)
+```bash
+# 1. Clone the repository
+git clone https://github.com/yourusername/music-genre-classifier.git
+cd music-genre-classifier
 
-📈 Confidence score visualized with gradient bar
+# 2. Create virtual environment (optional but recommended)
+python -m venv venv
+source venv/bin/activate  # on Windows: venv\Scripts\activate
 
-🌊 Waveform-based audio player using Web Audio API
+# 3. Install dependencies
+pip install -r requirements.txt
 
-📚 Genre cards with description and examples
+# 4. Run the application
+python app.py
+```
 
-📸 Screenshots coming soon!
+---
 
-🖼 UI Preview (Coming Soon…)
-Screenshots or demo GIFs of:
+## 🧪 Sample Screenshot
 
-Upload screen
+```
+[Insert sample UI screenshot here if desired]
+```
 
-Prediction results
+---
 
-Spectrogram visualization
+## 📝 License
 
-Audio playback + confidence meter
-
-🛡 License
-This project is licensed under the MIT License.
-See the LICENSE file for more details.
-
-💡 Future Scope
-🎙 Real-time genre detection from microphone input
-
-🧠 Combine audio + lyrics for better classification
-
-🌐 Deploy live as a public web app
-
-🧑‍🏫 Add educational mode: explain features influencing prediction
-
-🤝 Contributing
-Contributions are welcome!
-If you’d like to suggest a feature or fix a bug, please:
-
-Open an issue first to discuss your idea.
-
-Fork the repository.
-
-Create a new branch and submit a pull request.
-
-📬 Contact
-Author: Harpal Rajput
-📧 Email: harpalsinghrajput007@gmail.com
-🔗 Portfolio: harpalrajput007 GitHub
-
-⭐️ Support
-If you like this project, don’t forget to star ⭐ it on GitHub!
+This project is licensed under the MIT License. Feel free to use, modify, and share!
